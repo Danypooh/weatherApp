@@ -55,6 +55,7 @@ div {
 
 #degrees {
   flex: 0.55 0.55 auto;
+  text-align: center;
 }
 
 /* #degrees::after {
@@ -65,4 +66,18 @@ div {
 #details {
   flex: 0.45 0.45 auto;
   padding-left: 40px;
+}
+
+.fade-in {
+  animation: fadeIn 1.1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    opacity: 1;
+  }
 }
