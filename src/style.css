@@ -1,0 +1,66 @@
+/* General */
+html {
+  box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+  
+:root {
+  --main-color: #a9792b;;
+  font-size: calc(0.625rem + 0.4vw);
+}
+
+#search {
+  border-radius: 10px;
+  height: 8.5vh;
+  width: 16vw;
+  margin: 10px;
+  font-size: calc(0.9rem + 0.4vw);
+  text-align: center;
+}
+
+div {
+  border: 1px solid black;
+}
+
+#main-weather-content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  height: 60vh;
+  width: 40vw;
+  flex: 1;
+}
+
+#general-info {
+  flex: 0.25 0.25 auto;
+}
+
+#weather-details {
+  display: flex;
+  flex-direction: row;
+  flex: 0.75 0.75 auto;
+}
+
+#degrees,
+#details {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  justify-content: center;
+  gap: 40px;
+}
+
+#degrees {
+  flex: 0.55 0.55 auto;
+}
+
+#details {
+  flex: 0.45 0.45 auto;
+  padding-left: 40px;
+}
