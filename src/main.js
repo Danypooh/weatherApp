@@ -47,8 +47,8 @@ function displayData(newData) {
 
   condition.textContent = newData.condition;
   location.textContent = `${newData.location}, ${newData.country}`;
-  degrees.textContent = newData.temperature;
-  feels.textContent = `FEELS LIKE: ${newData.feelsLike}`;
+  degrees.textContent = `${newData.temperature} \xB0`;
+  feels.textContent = `FEELS LIKE: ${newData.feelsLike} \xB0`;
   wind.textContent = `WIND: ${newData.wind} KPH`;
   humidity.textContent = `HUMIDITY: ${newData.humidity}%`;
 }
